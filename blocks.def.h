@@ -1,9 +1,9 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"RAM: ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	5,	0},
-	{""     , "internet.sh"                                            ,	5,	4},
-	{""     , "battery.sh"                                             ,	5,	3},
+	{"Ram: ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	5,	0},
+	{"Int:" , "internet.sh"                                            ,	5,	4},
+	{"Bat:" , "battery.sh"                                             ,	5,	3},
 	{""     , "clock.sh"                                               ,   60,	1},
 	// {""     , "date '+%a, %d %b, %H:%M %Z'"                            ,	5,	0},
 };
